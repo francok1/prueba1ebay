@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ebb"
+    tools:context=".menu_act" >
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="244dp"
+        android:layout_height="152dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home" />
+
+    <TableLayout
+        android:layout_width="226dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="116dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/ps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="producto"
+                android:text="PRODUCTOS" />
+
+            <Button
+                android:id="@+id/cs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="coment"
+                android:text="COMENTARIOS" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/cls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="cliente"
+                android:text="CLIENTES" />
+
+            <Button
+                android:id="@+id/io"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="info"
+                android:text="INFO" />
+        </TableRow>
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
